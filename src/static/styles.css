@@ -132,6 +132,73 @@ button:hover {
   border: 1px solid #bee5eb;
 }
 
+.activity-card .participants {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #ffffff, #fbfbfb);
+  border: 1px solid #e6e9ef;
+  font-size: 0.95rem;
+}
+
+.activity-card .participants strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.activity-card .participants-list {
+  margin: 0;
+  margin-top: 6px;
+  padding-left: 0;
+  max-height: 120px;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.activity-card .participant-item {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.activity-card .participant-email {
+  color: #333;
+  word-break: break-all;
+}
+
+.activity-card .participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.activity-card .participant-delete:hover {
+  background-color: rgba(198,40,40,0.06);
+}
+
+.activity-card .participants-empty {
+  color: #777;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.activity-card .participants-list li::marker {
+  color: #666;
+}
+
 .hidden {
   display: none;
 }
