@@ -151,16 +151,41 @@ button:hover {
 .activity-card .participants-list {
   margin: 0;
   margin-top: 6px;
-  padding-left: 1rem;
+  padding-left: 0;
   max-height: 120px;
   overflow-y: auto;
-  list-style: disc outside;
+  list-style: none;
 }
 
 .activity-card .participant-item {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.activity-card .participant-email {
+  color: #333;
+  word-break: break-all;
+}
+
+.activity-card .participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.activity-card .participant-delete:hover {
+  background-color: rgba(198,40,40,0.06);
 }
 
 .activity-card .participants-empty {
